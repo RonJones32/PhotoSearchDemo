@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="15505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_5" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15510"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="SearchPhotosViewController" customModule="CNNAssessment" customModuleProvider="target">
+            <connections>
+                <outlet property="searchOut" destination="dbw-Ht-PFv" id="g0B-tg-Srm"/>
+                <outlet property="tbleView" destination="IrU-Ri-cWI" id="FeW-42-uFl"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <searchBar contentMode="redraw" translatesAutoresizingMaskIntoConstraints="NO" id="dbw-Ht-PFv">
+                    <rect key="frame" x="0.0" y="425" width="414" height="56"/>
+                    <textInputTraits key="textInputTraits"/>
+                </searchBar>
+                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Image" translatesAutoresizingMaskIntoConstraints="NO" id="nwf-mK-WJl">
+                    <rect key="frame" x="20" y="44" width="374" height="190"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="190" id="OE1-rP-VWt"/>
+                    </constraints>
+                </imageView>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="IrU-Ri-cWI">
+                    <rect key="frame" x="0.0" y="481" width="414" height="381"/>
+                    <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                </tableView>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="nwf-mK-WJl" secondAttribute="trailing" constant="20" id="1js-wC-FZ3"/>
+                <constraint firstItem="nwf-mK-WJl" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="20" id="AgI-7r-k3f"/>
+                <constraint firstItem="dbw-Ht-PFv" firstAttribute="centerX" secondItem="fnl-2z-Ty3" secondAttribute="centerX" id="KYt-QR-qFH"/>
+                <constraint firstItem="dbw-Ht-PFv" firstAttribute="centerY" secondItem="fnl-2z-Ty3" secondAttribute="centerY" id="Ubp-Qi-CHp"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="IrU-Ri-cWI" secondAttribute="bottom" id="XBd-Qb-AKD"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="dbw-Ht-PFv" secondAttribute="trailing" id="YFj-8j-2EV"/>
+                <constraint firstItem="IrU-Ri-cWI" firstAttribute="top" secondItem="dbw-Ht-PFv" secondAttribute="bottom" id="YGq-SF-ogx"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="IrU-Ri-cWI" secondAttribute="trailing" id="g9C-9j-VC6"/>
+                <constraint firstItem="IrU-Ri-cWI" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="tdd-Ld-5Jd"/>
+                <constraint firstItem="dbw-Ht-PFv" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="vLZ-jH-RuN"/>
+                <constraint firstItem="nwf-mK-WJl" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" id="zce-DL-GzJ"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <point key="canvasLocation" x="-736" y="-1"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="Image" width="100" height="75"/>
+    </resources>
+</document>
